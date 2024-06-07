@@ -146,8 +146,8 @@ if [ ! -d "$INTERBOTIX_WS/src" ]; then
   echo "Installing ROS packages for the Interbotix Arm..."
   mkdir -p $INTERBOTIX_WS/src
   cd $INTERBOTIX_WS/src
-  git clone https://github.com/Interbotix/interbotix_ros_core.git
-  git clone https://github.com/Interbotix/interbotix_ros_manipulators.git
+  git clone https://github.com/arnavthareja/interbotix_ros_core.git
+  git clone https://github.com/arnavthareja/interbotix_ros_manipulators.git
   git clone https://github.com/Interbotix/interbotix_ros_toolboxes.git
   cd interbotix_ros_manipulators && git checkout $ROS_NAME && cd ..
   rm interbotix_ros_core/interbotix_ros_xseries/CATKIN_IGNORE
